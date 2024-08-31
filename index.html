@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les formulaires HTML</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <form action="/action_page" method="post">
-        <ul>
-            <li>
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="Votre nom">
-            </li>
-            <li>
-                <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
-            </li>
-            <li>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" placeholder="Votre email">
-            </li>
-            <li>
-                <label for="telephone">Téléphone :</label>
-                <input type="tel" id="telephone" name="telephone" placeholder="Votre téléphone">
-            </li>
-            <li>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" placeholder="Votre message"></textarea>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" 
+          autocomplete="nickname"/>
+          
+        </li>
+        <li>
+          <label for="prenom">Prénom :</label>
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            placeholder="Votre prénom"
+            autocomplete="name"
+          />
+        </li>
+        <li>
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre email"
+            autocomplete="email"
+          />
+        </li>
+        <li>
+          <label for="message">Message :</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Votre message"
+            required
+          ></textarea>
+        </li>
+      </ul>
+      <div>
         <button type="submit">Envoyer le message</button>
         <button type="reset">Effacer le formulaire</button>
-        
+      </div>
     </form>
-</body>
+  </body>
 </html>
